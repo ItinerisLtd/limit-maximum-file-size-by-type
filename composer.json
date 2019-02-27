@@ -1,0 +1,43 @@
+{
+    "name": "itinerisltd/limit-maximum-upload-file-size",
+    "type": "wordpress-muplugin",
+    "description": "Limit maximum upload file size..",
+    "keywords": [
+        "media-upload",
+        "wordpress",
+        "wp"
+    ],
+    "homepage": "https://itinerisltd.github.io/limit-maximum-upload-file-size/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "hello@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Tang Rufus",
+            "email": "tangrufus@gmail.com",
+            "homepage": "https://typist.tech/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "prefer-stable": true,
+    "support": {
+        "email": "hello@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/limit-maximum-upload-file-size/issues",
+        "source": "https://github.com/ItinerisLtd/limit-maximum-upload-file-size"
+    }
+}
