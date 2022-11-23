@@ -5,7 +5,7 @@ declare(strict_types=1);
  * Plugin Name:     Limit Maximum Upload File Size
  * Plugin URI:      https://github.com/itinerisltd/limit-maximum-upload-file-size
  * Description:     Limit maximum upload file size
- * Version:         0.1.0
+ * Version:         0.2.0
  * Author:          Itineris Limited
  * Author URI:      https://www.itineris.co.uk/
  * Text Domain:     limit-maximum-upload-file-size
