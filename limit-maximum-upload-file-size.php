@@ -5,7 +5,7 @@ declare(strict_types=1);
  * Plugin Name:     Limit Maximum Upload File Size
  * Plugin URI:      https://github.com/itinerisltd/limit-maximum-upload-file-size
  * Description:     Limit maximum upload file size
- * Version:         0.2.0
+ * Version:         0.2.1
  * Author:          Itineris Limited
  * Author URI:      https://www.itineris.co.uk/
  * Text Domain:     limit-maximum-upload-file-size
@@ -18,11 +18,6 @@ if (! defined('WPINC')) {
     die;
 }
 
-function startsWith(string $text, string $prefix): bool
-{
-    return '' !== $prefix && 0 === strpos($text, $prefix);
-}
-
 add_filter( 'upload_size_limit', function (): int {
     return 5242880; // 5 * 1024 * 1024 = 5MB.
 }, 999);
@@ -31,7 +26,7 @@ add_filter('wp_handle_upload_prefilter', function (array $file): array {
     $imageSizeLimit = 2097152; // 2 * 1024 * 1024 = 2MB
 
     // TODO: Allow configuration.
-    if (! startsWith($file['type'], 'image/')) {
+    if (! str_starts_with($file['type'], 'image/')) {
         return $file;
     }
 
